@@ -1,0 +1,40 @@
+$break-small: 768px;
+
+.section-title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.prediction-form {
+  margin: 50px auto;
+  @media screen and (min-width: $break-small) {
+    width:40%;
+  }
+  .btn-primary {
+    width:100%;
+  }
+  .message {
+    font-size: 15px;
+    font-style: italic;
+    margin: 20px auto;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    text-align: center;
+    @media screen and (min-width: $break-small) {
+      font-size: 20px;
+    }
+
+    &.success {
+      color: blue;
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    &.error {
+      color: red;
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+  }
+}
+
